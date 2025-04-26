@@ -1,0 +1,197 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <tab name="Init" type="InitTab" active="false" scrollx="96.10433316074159" scrolly="-72.67711585623408" scale="0.8075235095137141">
+    <block xmlns="https://developers.google.com/blockly/xml" type="initSettings" id="V6e9~)g,+FF!G2TKQE8." x="110" y="90">
+      <field name="LOAD_COMP_ASSETS">TRUE</field>
+      <field name="FULLSCREEN">TRUE</field>
+      <field name="BKG_TRANSPARENCY">FALSE</field>
+      <field name="PRESERVE_DRAW_BUF">FALSE</field>
+      <field name="FADE_ANNOTATIONS">TRUE</field>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="initPreloader" id="sIIK*$huAJQ51AxT.}KL" x="370" y="90">
+      <statement name="DO_PROGRESS">
+        <block type="setHTMLElemAttribute" id="~_Siws|]4X^a56|iV=fB">
+          <field name="ATTRIBUTE">innerHTML</field>
+          <field name="PARENT">TRUE</field>
+          <value name="VALUE">
+            <shadow type="text" id="z`X{Tg{~*UO)e}B)Y*{#">
+              <field name="TEXT"></field>
+            </shadow>
+            <block type="text_join" id="xW|x-YMYs6iChPrp7X##">
+              <mutation items="2"></mutation>
+              <value name="ADD0">
+                <block type="percentage" id="?Fq:+doyo[fh;YtH=K`G"></block>
+              </value>
+              <value name="ADD1">
+                <block type="text" id="wY?7hfQN)5!O:S6UeY)q">
+                  <field name="TEXT">%</field>
+                </block>
+              </value>
+            </block>
+          </value>
+          <value name="ID">
+            <shadow type="text" id="EP}[ECMuqK4N1@wwo?8U">
+              <field name="TEXT">progress_bar</field>
+            </shadow>
+          </value>
+        </block>
+      </statement>
+      <statement name="DO_END">
+        <block type="setHTMLElemStyle" id="QuEhs0yG+_~_UheZ4%d+">
+          <field name="PROPERTY">display</field>
+          <field name="PARENT">TRUE</field>
+          <value name="VALUE">
+            <shadow type="displayDropdown" id="+ko,Q;uq7RHR-rO-a(`s">
+              <field name="TEXT">block</field>
+            </shadow>
+            <block type="text" id="(y:AsQMJ5o^`;bi0JLN-">
+              <field name="TEXT">none</field>
+            </block>
+          </value>
+          <value name="ID">
+            <shadow type="text" id="DG+w9Htvcqc~[$t+pv^Y">
+              <field name="TEXT">page_chargement</field>
+            </shadow>
+          </value>
+        </block>
+      </statement>
+    </block>
+  </tab>
+  <tab name="New Tab" type="CommonTab" active="true" scrollx="127.9524007364081" scrolly="224.24700654923396" scale="0.7223338982029867">
+    <block xmlns="https://developers.google.com/blockly/xml" type="controls_if" id="v1~Z`{FbX-W/:jKydAr:" x="150" y="110">
+      <value name="IF0">
+        <block type="featureAvailable" id="6RAsa;,aTq[G[qTov$A[">
+          <field name="FEATURE">RETINA</field>
+        </block>
+      </value>
+      <statement name="DO0">
+        <block type="setScreenScale" id="diD6EE~zz$ok[siD:8Gr">
+          <value name="FACTOR">
+            <shadow type="math_number" id="St0n71$If~a1Br}y?NOW">
+              <field name="NUM">1</field>
+            </shadow>
+            <block type="nativeScreenScale" id="j=Id%q]?YKJKZ5S-rtGO"></block>
+          </value>
+        </block>
+      </statement>
+      <next>
+        <block type="controls_if" id="lsH)QPpFs|,5GHMnR6yk">
+          <value name="IF0">
+            <block type="featureAvailable" id="t~`J*C1Edb#2y5KyA9X=">
+              <field name="FEATURE">RETINA</field>
+            </block>
+          </value>
+          <statement name="DO0">
+            <block type="setScreenScale" id="K49lK%H5x!~wU,4_nXsn">
+              <value name="FACTOR">
+                <shadow type="math_number" id="ObEOLW,W!8UvkD/8NLwq">
+                  <field name="NUM">1.5</field>
+                </shadow>
+              </value>
+            </block>
+          </statement>
+        </block>
+      </next>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="whenClicked" id="dTW!lPaa9+WGQS78?=X7" inline="false" x="970" y="270">
+      <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false" enableifmissed="false"></mutation>
+      <field name="X_RAY">FALSE</field>
+      <field name="DOUBLE_CLICK">FALSE</field>
+      <field name="LEFT_BUTTON">TRUE</field>
+      <field name="MIDDLE_BUTTON">TRUE</field>
+      <field name="RIGHT_BUTTON">TRUE</field>
+      <value name="VALUE">
+        <shadow type="objectList" id="4z;oRMA92dD?Y)bF/fz5">
+          <field name="FIELDNAME">tissu</field>
+        </shadow>
+      </value>
+      <statement name="DO">
+        <block type="openFile" id="7nTf#Xd=*+U2;dOnLip7">
+          <statement name="DO">
+            <block type="procedures_callnoreturn" id="PfG5Iee;TP1%nIr{yi2b">
+              <mutation name="process_opened_file2"></mutation>
+            </block>
+          </statement>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="checkVRMode" id="z86Pz4}0[$m|:ECEBjQ{" x="150" y="330">
+      <statement name="DO_UNAVAIL">
+        <block type="eventHTMLElem" id="RMmzZ`:Lw0Lbh9Aol%e=">
+          <field name="EVENT">pointerup</field>
+          <field name="PARENT">TRUE</field>
+          <value name="ID">
+            <shadow type="text" id="Zq_*v3z%^Zm~}3yXD2B,">
+              <field name="TEXT">start_ar</field>
+            </shadow>
+          </value>
+          <statement name="DO">
+            <block type="AR-for-iOS/exportToUsdz" id="8^rnv(JMyF@^UtRQa4fi">
+              <mutation xmlns="http://www.w3.org/1999/xhtml" enabledoslot="false"></mutation>
+              <value name="EXPORTER">
+                <shadow type="exportToUSDZ" id="H($ZR6Rdx@/I~|X7?NV!">
+                  <value name="OBJ_NAME">
+                    <shadow type="objectList" id="Po{Dx|T0IB:;1hI!ECy!">
+                      <field name="FIELDNAME">export_objet</field>
+                    </shadow>
+                  </value>
+                </shadow>
+              </value>
+              <value name="OPTIONS">
+                <shadow type="text" id="an/O9unbu1FV5@J@b=2n">
+                  <field name="TEXT">allowsContentScaling=0</field>
+                </shadow>
+              </value>
+            </block>
+          </statement>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defnoreturn" id="MofW~6p@Vn[:}=xBqKbq" x="1310" y="290">
+      <field name="NAME">process_opened_file2</field>
+      <comment pinned="false" h="80" w="160">Describe this function...</comment>
+      <statement name="STACK">
+        <block type="replaceTexture" id="#4h+=v~B8oU?$9VAFa6C">
+          <mutation xmlns="http://www.w3.org/1999/xhtml" enabledoslot="false" flextexinput="false"></mutation>
+          <field name="OLD_TEX_NAME">import_image.png</field>
+          <value name="MATERIAL">
+            <shadow type="materialList" id="vz1M5e=]V,DI:`yj}mw#">
+              <field name="FIELDNAME">tissu</field>
+            </shadow>
+          </value>
+          <value name="NEW_TEX_URL">
+            <shadow type="text" id="a,#IGphOjE0H!?:`B8+!">
+              <field name="TEXT">newTexture.png</field>
+            </shadow>
+            <block type="openedFile" id="lScC|RA:|yy7jv2mx*zi">
+              <field name="WHAT">DATA</field>
+            </block>
+          </value>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defnoreturn" id="RLNCop+|(PysYoQ:]NAb" x="150" y="1410">
+      <field name="NAME">process_opened_file</field>
+      <comment pinned="false" h="80" w="160">Describe this function...</comment>
+      <statement name="STACK">
+        <block type="replaceTexture" id="4HAWKPTp?285{EC%y1os">
+          <mutation xmlns="http://www.w3.org/1999/xhtml" enabledoslot="false" flextexinput="false"></mutation>
+          <field name="OLD_TEX_NAME">import_image.png</field>
+          <value name="MATERIAL">
+            <shadow type="materialList" id="(N]!dxAet1WW*$j:-TEt">
+              <field name="FIELDNAME">flag</field>
+            </shadow>
+          </value>
+          <value name="NEW_TEX_URL">
+            <shadow type="text" id="3A,:sb(6^Qf]z-!nw|-*">
+              <field name="TEXT">newTexture.png</field>
+            </shadow>
+            <block type="openedFile" id="6#+D{LiXJm;rGGAZgJ.[">
+              <field name="WHAT">DATA</field>
+            </block>
+          </value>
+        </block>
+      </statement>
+    </block>
+  </tab>
+  <editorsettings viewport-x="1392.7926513671873" viewport-y="37" viewport-w="486.204" viewport-h="458.495" viewport-hidden="true" toolbox-library-mode="false" toolbox-minimized-mode="false"></editorsettings>
+</xml>
