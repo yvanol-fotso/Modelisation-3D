@@ -1,0 +1,31 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <tab name="Init" type="InitTab" active="true" scrollx="20" scrolly="19.999999999999886" scale="0.9">
+    <block xmlns="https://developers.google.com/blockly/xml" type="initSettings" id="V6e9~)g,+FF!G2TKQE8." x="110" y="90">
+      <field name="LOAD_COMP_ASSETS">TRUE</field>
+      <field name="FULLSCREEN">TRUE</field>
+      <field name="BKG_TRANSPARENCY">FALSE</field>
+      <field name="PRESERVE_DRAW_BUF">FALSE</field>
+      <field name="FADE_ANNOTATIONS">TRUE</field>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="initPreloader" id="sIIK*$huAJQ51AxT.}KL" x="370" y="90">
+      <statement name="DO_PROGRESS">
+        <block type="setHTMLElemStyle" id="OT!)vv0dtBV,x,XjQ-t-">
+          <field name="PROPERTY">color</field>
+          <field name="PARENT">FALSE</field>
+          <value name="VALUE">
+            <shadow type="text" id="Oz:c$whf{0IG{g$zam0O">
+              <field name="TEXT">#000000</field>
+            </shadow>
+          </value>
+          <value name="ID">
+            <shadow type="text" id="SZk8a6f1RgA|RZx07*WJ">
+              <field name="TEXT">myElem</field>
+            </shadow>
+          </value>
+        </block>
+      </statement>
+    </block>
+  </tab>
+  <tab name="New Tab" type="CommonTab" active="false" scrollx="20" scrolly="20" scale="0.9"></tab>
+  <editorsettings viewport-x="1392.7926513671873" viewport-y="37" viewport-w="486.204" viewport-h="458.495" viewport-hidden="false" toolbox-library-mode="false" toolbox-minimized-mode="false"></editorsettings>
+</xml>
