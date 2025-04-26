@@ -1,0 +1,2026 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <tab name="Init" type="InitTab" active="false" scrollx="301.24318967124236" scrolly="187.80051455654188" scale="0.7811716101330864">
+    <block xmlns="https://developers.google.com/blockly/xml" type="initSettings" id="V6e9~)g,+FF!G2TKQE8." x="110" y="90">
+      <field name="LOAD_COMP_ASSETS">TRUE</field>
+      <field name="FULLSCREEN">TRUE</field>
+      <field name="BKG_TRANSPARENCY">FALSE</field>
+      <field name="PRESERVE_DRAW_BUF">FALSE</field>
+      <field name="FADE_ANNOTATIONS">TRUE</field>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="initPreloader" id="YOlS9O_C_I_/wUDO{vp:" x="390" y="90">
+      <statement name="DO_PROGRESS">
+        <block type="setHTMLElemAttribute" id="MV_]qJFDPyH7QQ*Kl,FR">
+          <field name="ATTRIBUTE">innerHTML</field>
+          <field name="PARENT">TRUE</field>
+          <value name="VALUE">
+            <shadow type="text" id="z`X{Tg{~*UO)e}B)Y*{#">
+              <field name="TEXT"></field>
+            </shadow>
+            <block type="text_join" id="8P2*40e8yqJ`To$)2z3r">
+              <mutation items="2"></mutation>
+              <value name="ADD0">
+                <block type="percentage" id="@L_%[;]3D$u}4k}7lo?C"></block>
+              </value>
+              <value name="ADD1">
+                <block type="text" id="!(6|RKcbZ~RW=v6hs6uG">
+                  <field name="TEXT">%</field>
+                </block>
+              </value>
+            </block>
+          </value>
+          <value name="ID">
+            <shadow type="text" id="V|pg$V~}b20~T5+@4y(C">
+              <field name="TEXT">progress_bar</field>
+            </shadow>
+          </value>
+        </block>
+      </statement>
+      <statement name="DO_END">
+        <block type="setHTMLElemStyle" id="Io4Db,ou|O8`yE2lbji~">
+          <field name="PROPERTY">display</field>
+          <field name="PARENT">TRUE</field>
+          <value name="VALUE">
+            <shadow type="displayDropdown" id="+ko,Q;uq7RHR-rO-a(`s">
+              <field name="TEXT">block</field>
+            </shadow>
+            <block type="text" id="V+/]naiE3QXfw.#nQUff">
+              <field name="TEXT">none</field>
+            </block>
+          </value>
+          <value name="ID">
+            <shadow type="text" id="3!t#N`P|6dDC*FeO,Woh">
+              <field name="TEXT">page_chargement</field>
+            </shadow>
+          </value>
+        </block>
+      </statement>
+    </block>
+  </tab>
+  <tab name="New Tab" type="CommonTab" active="true" scrollx="673.9085904130892" scrolly="267.1566707431366" scale="0.31006791028264996">
+    <variables xmlns="https://developers.google.com/blockly/xml">
+      <variable id="U{-7r%UE6pN!eq)P;jWP">_cam_pos</variable>
+      <variable id="F:BL-YRT8HB9}17}}AXE">mode</variable>
+    </variables>
+    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="(`,T]5ibc07RUObB8)/G" x="-370" y="-570">
+      <field name="EVENT">click</field>
+      <field name="PARENT">TRUE</field>
+      <value name="ID">
+        <shadow type="text" id="a7d{fKA%HdjQC3Z_#r!f">
+          <field name="TEXT">taille-1</field>
+        </shadow>
+      </value>
+      <statement name="DO">
+        <block type="show" id="lWzKt/!yUJ%pM^pVqZ/k">
+          <value name="VALUE">
+            <shadow type="objectList" id="lxL?qR5Mnh|c|CF~97DP">
+              <field name="FIELDNAME">taille_1</field>
+            </shadow>
+          </value>
+          <next>
+            <block type="hide" id="?T.C)nJ7AyKu:7!,t8/!">
+              <value name="VALUE">
+                <shadow type="objectList" id="pQ_s6h{[#i`a[OG9W4%x">
+                  <field name="FIELDNAME">&lt;none&gt;</field>
+                </shadow>
+                <block type="lists_create_with" id="}(yPT!zk9qjFplyf@jFc">
+                  <mutation items="3"></mutation>
+                  <value name="ADD0">
+                    <block type="objectList" id="yiyc{+LlS^rugQ_Puhfq">
+                      <field name="FIELDNAME">taille_2</field>
+                    </block>
+                  </value>
+                  <value name="ADD1">
+                    <block type="objectList" id="s(BTi%Kj5Hxw$(j776])">
+                      <field name="FIELDNAME">taille_3</field>
+                    </block>
+                  </value>
+                  <value name="ADD2">
+                    <block type="objectList" id="}C{0D$VCRJoY+QhOABQ+">
+                      <field name="FIELDNAME">taille_4</field>
+                    </block>
+                  </value>
+                </block>
+              </value>
+              <next>
+                <block type="setObjTransform" id="=82(gfK.iKrO?i:bua*f">
+                  <mutation xmlns="http://www.w3.org/1999/xhtml" usevectorslot="false" useworldspace="false"></mutation>
+                  <field name="MODE">scale</field>
+                  <field name="OFFSET">FALSE</field>
+                  <value name="TARGETOBJ">
+                    <shadow type="objectList" id="~w,ndOa!{UOUrS#p3XU8">
+                      <field name="FIELDNAME">&lt;none&gt;</field>
+                    </shadow>
+                    <block type="lists_create_with" id="]cMGuoQ$:gP_g)gD[Kby">
+                      <mutation items="4"></mutation>
+                      <value name="ADD0">
+                        <block type="objectList" id="-o5;mK7HeS+0@5T`b{kq">
+                          <field name="FIELDNAME">base_1</field>
+                        </block>
+                      </value>
+                      <value name="ADD1">
+                        <block type="objectList" id="/zSD`Xp59ha!2*.YdllH">
+                          <field name="FIELDNAME">base_2</field>
+                        </block>
+                      </value>
+                      <value name="ADD2">
+                        <block type="objectList" id="bU*:4A1ZTqyN*`UKJK#^">
+                          <field name="FIELDNAME">base_3</field>
+                        </block>
+                      </value>
+                      <value name="ADD3">
+                        <block type="objectList" id="1h)R]*LM,]X[OJ^W`XG~">
+                          <field name="FIELDNAME">base_4</field>
+                        </block>
+                      </value>
+                    </block>
+                  </value>
+                  <value name="X">
+                    <block type="math_number" id="$0/WB~MH8{fm?+c@Gv:r">
+                      <field name="NUM">1</field>
+                    </block>
+                  </value>
+                  <value name="Y">
+                    <block type="math_number" id="4y5#**kb}-arPh:8U6J_" disabled="true">
+                      <field name="NUM">0</field>
+                    </block>
+                  </value>
+                  <value name="Z">
+                    <block type="math_number" id="esLB!FZshyvoBS9!Dl~7" disabled="true">
+                      <field name="NUM">0</field>
+                    </block>
+                  </value>
+                  <next>
+                    <block type="zoomCameraToObject" id="Ev2PL2qY7?er+%~.:A$j">
+                      <mutation xmlns="http://www.w3.org/1999/xhtml" whenfinishedslot="false"></mutation>
+                      <value name="OBJECT">
+                        <shadow type="objectList" id=":fILhd8-HP,(21d;@6!}">
+                          <field name="FIELDNAME">taille_1</field>
+                        </shadow>
+                      </value>
+                      <value name="DURATION">
+                        <shadow type="math_number" id="8!}kpux;up~J:a9*3l?D">
+                          <field name="NUM">1</field>
+                        </shadow>
+                      </value>
+                      <next>
+                        <block type="procedures_callnoreturn" id="*5TjCsq^!xF~jFUfdPb1">
+                          <mutation name="set_state_changed"></mutation>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </statement>
+      <next>
+        <block type="eventHTMLElem" id="x7Vo7dG;qO*,LfB.Yk%1">
+          <field name="EVENT">click</field>
+          <field name="PARENT">TRUE</field>
+          <value name="ID">
+            <shadow type="text" id="SJK;JRTCP#QIPwpuPdt3">
+              <field name="TEXT">taille-2</field>
+            </shadow>
+          </value>
+          <statement name="DO">
+            <block type="show" id="9e]]gI!u([=%*UTmAAf,">
+              <value name="VALUE">
+                <shadow type="objectList" id="=t6DZgcEbI2it:3k37Q=">
+                  <field name="FIELDNAME">taille_2</field>
+                </shadow>
+              </value>
+              <next>
+                <block type="hide" id="zX#46sEDt7lGZ%}CMpYs">
+                  <value name="VALUE">
+                    <shadow type="objectList" id="pQ_s6h{[#i`a[OG9W4%x">
+                      <field name="FIELDNAME">&lt;none&gt;</field>
+                    </shadow>
+                    <block type="lists_create_with" id="!iZ@K,hCgyDVVVe#/}Fx">
+                      <mutation items="3"></mutation>
+                      <value name="ADD0">
+                        <block type="objectList" id="#u?ELqRH|br($5mXm){|">
+                          <field name="FIELDNAME">taille_1</field>
+                        </block>
+                      </value>
+                      <value name="ADD1">
+                        <block type="objectList" id="1(M6Q?3..1M@=_`kj7`d">
+                          <field name="FIELDNAME">taille_3</field>
+                        </block>
+                      </value>
+                      <value name="ADD2">
+                        <block type="objectList" id="LDqCW^O(8shGo*9EItjZ">
+                          <field name="FIELDNAME">taille_4</field>
+                        </block>
+                      </value>
+                    </block>
+                  </value>
+                  <next>
+                    <block type="setObjTransform" id="yxgPKJQ{L/m,+OgRAaUE">
+                      <mutation xmlns="http://www.w3.org/1999/xhtml" usevectorslot="false" useworldspace="false"></mutation>
+                      <field name="MODE">scale</field>
+                      <field name="OFFSET">FALSE</field>
+                      <value name="TARGETOBJ">
+                        <shadow type="objectList" id="~w,ndOa!{UOUrS#p3XU8">
+                          <field name="FIELDNAME">&lt;none&gt;</field>
+                        </shadow>
+                        <block type="lists_create_with" id="o$#Qe*3{*hFi?Qv{9BD{">
+                          <mutation items="4"></mutation>
+                          <value name="ADD0">
+                            <block type="objectList" id="dC;h|#Eq|1,3mOnGLbWV">
+                              <field name="FIELDNAME">base_1</field>
+                            </block>
+                          </value>
+                          <value name="ADD1">
+                            <block type="objectList" id="06hKAEV.3*`6yVGC.sLp">
+                              <field name="FIELDNAME">base_2</field>
+                            </block>
+                          </value>
+                          <value name="ADD2">
+                            <block type="objectList" id="x)Z1[l1$OWu1#Yb{Z-d|">
+                              <field name="FIELDNAME">base_3</field>
+                            </block>
+                          </value>
+                          <value name="ADD3">
+                            <block type="objectList" id="Br6|[o|~UkHmC9Ye;2=Q">
+                              <field name="FIELDNAME">base_4</field>
+                            </block>
+                          </value>
+                        </block>
+                      </value>
+                      <value name="X">
+                        <block type="math_number" id="9RJ~S#J(g@[@PNV[S5en">
+                          <field name="NUM">1.44</field>
+                        </block>
+                      </value>
+                      <value name="Y">
+                        <block type="math_number" id=";oa?I;5AF(7}Lo}L#/@F" disabled="true">
+                          <field name="NUM">1.23</field>
+                        </block>
+                      </value>
+                      <value name="Z">
+                        <block type="math_number" id="]tgj`Q)x?u[BN@@72u_/" disabled="true">
+                          <field name="NUM">1.23</field>
+                        </block>
+                      </value>
+                      <next>
+                        <block type="zoomCameraToObject" id="WB(2:FXuY$(~QD2o~!ch">
+                          <mutation xmlns="http://www.w3.org/1999/xhtml" whenfinishedslot="false"></mutation>
+                          <value name="OBJECT">
+                            <shadow type="objectList" id="%R-MA~sgsLY`3ZIH!a?D">
+                              <field name="FIELDNAME">taille_2</field>
+                            </shadow>
+                          </value>
+                          <value name="DURATION">
+                            <shadow type="math_number" id="d@s]d4+UM#|NsmIK(s2Y">
+                              <field name="NUM">1</field>
+                            </shadow>
+                          </value>
+                          <next>
+                            <block type="procedures_callnoreturn" id="0nbgnOBaT)fW[OfMvF1)">
+                              <mutation name="set_state_changed"></mutation>
+                            </block>
+                          </next>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </statement>
+          <next>
+            <block type="eventHTMLElem" id="B,(bZSu-M/{MD]1zy/g+">
+              <field name="EVENT">click</field>
+              <field name="PARENT">TRUE</field>
+              <value name="ID">
+                <shadow type="text" id="l]|mj5rBjX)RL@?vP(RW">
+                  <field name="TEXT">taille-3</field>
+                </shadow>
+              </value>
+              <statement name="DO">
+                <block type="show" id="{,.x7uhog9lVHvT+[oW-">
+                  <value name="VALUE">
+                    <shadow type="objectList" id="jVAT;1p0Ne6vV:;c#FZZ">
+                      <field name="FIELDNAME">taille_3</field>
+                    </shadow>
+                  </value>
+                  <next>
+                    <block type="hide" id="{L1BIQh#3|=nrTGuB{wf">
+                      <value name="VALUE">
+                        <shadow type="objectList" id="pQ_s6h{[#i`a[OG9W4%x">
+                          <field name="FIELDNAME">&lt;none&gt;</field>
+                        </shadow>
+                        <block type="lists_create_with" id="#X7+BeW?kx|v-9aRLby{">
+                          <mutation items="3"></mutation>
+                          <value name="ADD0">
+                            <block type="objectList" id="y@-7j)F#~VTI[)*O-hh6">
+                              <field name="FIELDNAME">taille_1</field>
+                            </block>
+                          </value>
+                          <value name="ADD1">
+                            <block type="objectList" id="dw`EULH*!oP,eMluapr1">
+                              <field name="FIELDNAME">taille_2</field>
+                            </block>
+                          </value>
+                          <value name="ADD2">
+                            <block type="objectList" id="9~^.`TIRo2q?o-^s6QsX">
+                              <field name="FIELDNAME">taille_4</field>
+                            </block>
+                          </value>
+                        </block>
+                      </value>
+                      <next>
+                        <block type="setObjTransform" id="FcXk7MqMU3GN0_fp)fQG">
+                          <mutation xmlns="http://www.w3.org/1999/xhtml" usevectorslot="false" useworldspace="false"></mutation>
+                          <field name="MODE">scale</field>
+                          <field name="OFFSET">FALSE</field>
+                          <value name="TARGETOBJ">
+                            <shadow type="objectList" id="~w,ndOa!{UOUrS#p3XU8">
+                              <field name="FIELDNAME">&lt;none&gt;</field>
+                            </shadow>
+                            <block type="lists_create_with" id="Cf#i4]SrJ-R))Xi7`r6h">
+                              <mutation items="4"></mutation>
+                              <value name="ADD0">
+                                <block type="objectList" id="dYMDKWGn;d8LTLw4M}(n">
+                                  <field name="FIELDNAME">base_1</field>
+                                </block>
+                              </value>
+                              <value name="ADD1">
+                                <block type="objectList" id="=`02z[nSxvK%rV`89,oL">
+                                  <field name="FIELDNAME">base_2</field>
+                                </block>
+                              </value>
+                              <value name="ADD2">
+                                <block type="objectList" id="6*}kEq[+!w)!c!IlWM!!">
+                                  <field name="FIELDNAME">base_3</field>
+                                </block>
+                              </value>
+                              <value name="ADD3">
+                                <block type="objectList" id="WCBBZx{H:3m^m6,a!]HQ">
+                                  <field name="FIELDNAME">base_4</field>
+                                </block>
+                              </value>
+                            </block>
+                          </value>
+                          <value name="X">
+                            <block type="math_number" id="s/~_bP$q+xj}A]NRbz@s">
+                              <field name="NUM">1.95</field>
+                            </block>
+                          </value>
+                          <value name="Y">
+                            <block type="math_number" id="[F)8pV3u|.LWqM)J2qRE" disabled="true">
+                              <field name="NUM">1.54</field>
+                            </block>
+                          </value>
+                          <value name="Z">
+                            <block type="math_number" id="|S%~kviWQG[-)EVpyxY}" disabled="true">
+                              <field name="NUM">1.54</field>
+                            </block>
+                          </value>
+                          <next>
+                            <block type="zoomCameraToObject" id="_(tG?fgP@5y@nB]+nU-w">
+                              <mutation xmlns="http://www.w3.org/1999/xhtml" whenfinishedslot="false"></mutation>
+                              <value name="OBJECT">
+                                <shadow type="objectList" id="Gf6Tm=gtXe.E}diz#V^x">
+                                  <field name="FIELDNAME">taille_3</field>
+                                </shadow>
+                              </value>
+                              <value name="DURATION">
+                                <shadow type="math_number" id="J9:U`#?,|PZMt4V^A]fO">
+                                  <field name="NUM">1</field>
+                                </shadow>
+                              </value>
+                              <next>
+                                <block type="procedures_callnoreturn" id="1eYO1Nj$VNokei8q_em|">
+                                  <mutation name="set_state_changed"></mutation>
+                                </block>
+                              </next>
+                            </block>
+                          </next>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </statement>
+              <next>
+                <block type="eventHTMLElem" id="Tep%G4!}CpZ-6Nir]90/">
+                  <field name="EVENT">click</field>
+                  <field name="PARENT">TRUE</field>
+                  <value name="ID">
+                    <shadow type="text" id="ac|2u}#b+htnY#(p]903">
+                      <field name="TEXT">taille-4</field>
+                    </shadow>
+                  </value>
+                  <statement name="DO">
+                    <block type="show" id="ngW12L:$6=oXN;)JA1-g">
+                      <value name="VALUE">
+                        <shadow type="objectList" id="]phcaq}O8b_1H~u3#59y">
+                          <field name="FIELDNAME">taille_4</field>
+                        </shadow>
+                      </value>
+                      <next>
+                        <block type="hide" id="GD7Z@Sp^)[Oi}AX:TC2#">
+                          <value name="VALUE">
+                            <shadow type="objectList" id="pQ_s6h{[#i`a[OG9W4%x">
+                              <field name="FIELDNAME">&lt;none&gt;</field>
+                            </shadow>
+                            <block type="lists_create_with" id="@5-B?TJdw*O#Xxz+X6yZ">
+                              <mutation items="3"></mutation>
+                              <value name="ADD0">
+                                <block type="objectList" id="!KlNY9ZRhPs;`AaeyM2:">
+                                  <field name="FIELDNAME">taille_1</field>
+                                </block>
+                              </value>
+                              <value name="ADD1">
+                                <block type="objectList" id="?x^kboAWvepM3::st8:s">
+                                  <field name="FIELDNAME">taille_2</field>
+                                </block>
+                              </value>
+                              <value name="ADD2">
+                                <block type="objectList" id="f*`T4T+96RQQ}dbMwB-u">
+                                  <field name="FIELDNAME">taille_3</field>
+                                </block>
+                              </value>
+                            </block>
+                          </value>
+                          <next>
+                            <block type="setObjTransform" id="cFJzJDOWR?-5mNF{PN;m">
+                              <mutation xmlns="http://www.w3.org/1999/xhtml" usevectorslot="false" useworldspace="false"></mutation>
+                              <field name="MODE">scale</field>
+                              <field name="OFFSET">FALSE</field>
+                              <value name="TARGETOBJ">
+                                <shadow type="objectList" id="~w,ndOa!{UOUrS#p3XU8">
+                                  <field name="FIELDNAME">&lt;none&gt;</field>
+                                </shadow>
+                                <block type="lists_create_with" id="mD]~txiPqXA[6;v1houC">
+                                  <mutation items="4"></mutation>
+                                  <value name="ADD0">
+                                    <block type="objectList" id="BLOt`p@z?,2B}@i;Kkx`">
+                                      <field name="FIELDNAME">base_1</field>
+                                    </block>
+                                  </value>
+                                  <value name="ADD1">
+                                    <block type="objectList" id="N.zBB?=Q.9D@|LHDkk@(">
+                                      <field name="FIELDNAME">base_2</field>
+                                    </block>
+                                  </value>
+                                  <value name="ADD2">
+                                    <block type="objectList" id="d{I+G7y5}A*qZ[w8GRd{">
+                                      <field name="FIELDNAME">base_3</field>
+                                    </block>
+                                  </value>
+                                  <value name="ADD3">
+                                    <block type="objectList" id="juTAh^36e#;mL$t5I]Vr">
+                                      <field name="FIELDNAME">base_4</field>
+                                    </block>
+                                  </value>
+                                </block>
+                              </value>
+                              <value name="X">
+                                <block type="math_number" id="/h5vPW#~x^Y$ewD0%}8D">
+                                  <field name="NUM">3.21</field>
+                                </block>
+                              </value>
+                              <value name="Y">
+                                <block type="math_number" id="=bo]%wLxdCEL:HM^NQGc" disabled="true">
+                                  <field name="NUM">1.88</field>
+                                </block>
+                              </value>
+                              <value name="Z">
+                                <block type="math_number" id="e-Y}i2LAo-uVD+b@Vc{g" disabled="true">
+                                  <field name="NUM">1.88</field>
+                                </block>
+                              </value>
+                              <next>
+                                <block type="zoomCameraToObject" id="E{k9kv:Rf+Tq*HL_:,r8">
+                                  <mutation xmlns="http://www.w3.org/1999/xhtml" whenfinishedslot="false"></mutation>
+                                  <value name="OBJECT">
+                                    <shadow type="objectList" id="E-qm?MfWRL$4s5sNcx~2">
+                                      <field name="FIELDNAME">taille_4</field>
+                                    </shadow>
+                                  </value>
+                                  <value name="DURATION">
+                                    <shadow type="math_number" id="0q(|WZX~%)%-nf.wk0nv">
+                                      <field name="NUM">1</field>
+                                    </shadow>
+                                  </value>
+                                  <next>
+                                    <block type="procedures_callnoreturn" id="9k9:QnB$mPo@NnG|e}nI">
+                                      <mutation name="set_state_changed"></mutation>
+                                    </block>
+                                  </next>
+                                </block>
+                              </next>
+                            </block>
+                          </next>
+                        </block>
+                      </next>
+                    </block>
+                  </statement>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </next>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="controls_if" id="v1~Z`{FbX-W/:jKydAr:" x="-1130" y="-230">
+      <value name="IF0">
+        <block type="featureAvailable" id="6RAsa;,aTq[G[qTov$A[">
+          <field name="FEATURE">RETINA</field>
+        </block>
+      </value>
+      <statement name="DO0">
+        <block type="setScreenScale" id="diD6EE~zz$ok[siD:8Gr">
+          <value name="FACTOR">
+            <shadow type="math_number" id="St0n71$If~a1Br}y?NOW">
+              <field name="NUM">1</field>
+            </shadow>
+            <block type="nativeScreenScale" id="j=Id%q]?YKJKZ5S-rtGO"></block>
+          </value>
+        </block>
+      </statement>
+      <next>
+        <block type="controls_if" id="lsH)QPpFs|,5GHMnR6yk">
+          <value name="IF0">
+            <block type="featureAvailable" id="t~`J*C1Edb#2y5KyA9X=">
+              <field name="FEATURE">RETINA</field>
+            </block>
+          </value>
+          <statement name="DO0">
+            <block type="setScreenScale" id="K49lK%H5x!~wU,4_nXsn">
+              <value name="FACTOR">
+                <shadow type="math_number" id="ObEOLW,W!8UvkD/8NLwq">
+                  <field name="NUM">1.5</field>
+                </shadow>
+              </value>
+            </block>
+          </statement>
+        </block>
+      </next>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="controls_if" id="R1=QimsV!kylvT-V5t/1" x="2510" y="-170">
+      <mutation elseif="1"></mutation>
+      <value name="IF0">
+        <block type="featureAvailable" id="][bSl=cR{Pn|9g{p;CFp">
+          <field name="FEATURE">IOS</field>
+        </block>
+      </value>
+      <statement name="DO0">
+        <block type="checkARMode" id="6qS0Q6dJ[Z4*E~%eWXBS">
+          <comment pinned="false" h="32" w="203">Check AR capabilities</comment>
+          <statement name="DO_AVAIL">
+            <block type="eventHTMLElem" id="*0IlovBzSyqr9mA0|sB{" disabled="true">
+              <field name="EVENT">pointerup</field>
+              <field name="PARENT">TRUE</field>
+              <comment pinned="false" h="32" w="99">Enter AR!</comment>
+              <value name="ID">
+                <block type="text" id="KAulj=ZA$:1+(2VIW6iV">
+                  <field name="TEXT">start_ar</field>
+                </block>
+              </value>
+              <statement name="DO">
+                <block type="variables_set" id="7G$Rj=PU.gO(]LJfsizt">
+                  <field name="VAR" id="U{-7r%UE6pN!eq)P;jWP">_cam_pos</field>
+                  <value name="VALUE">
+                    <block type="getObjTransform" id="?NrMdG/I|{OH?7_N~ooA">
+                      <mutation xmlns="http://www.w3.org/1999/xhtml" useworldspace="false"></mutation>
+                      <field name="MODE">position</field>
+                      <field name="COORD">x</field>
+                      <value name="TARGETOBJ">
+                        <shadow type="objectList" id="izf+6w*OxG80r:!h:z`8">
+                          <field name="FIELDNAME">&lt;none&gt;</field>
+                        </shadow>
+                        <block type="getActiveCamera" id="D*bNC|g^,8Y{4caG8-IL"></block>
+                      </value>
+                    </block>
+                  </value>
+                  <next>
+                    <block type="setScreenScale" id="KPR*X%`,V-pC%%*5*EuA">
+                      <value name="FACTOR">
+                        <shadow type="math_number" id=";AxoT=]Ga;EKyNgbwdIW">
+                          <field name="NUM">1</field>
+                        </shadow>
+                      </value>
+                      <next>
+                        <block type="enterARMode" id="_kLs!5D+;t_hhr]NkZFu">
+                          <field name="REF_SPACE">ORIGIN</field>
+                          <field name="ALLOW_HTML">TRUE</field>
+                          <statement name="DO_ENTER">
+                            <block type="hide" id="#9KFwsbipM+[BkuMd-I%">
+                              <value name="VALUE">
+                                <block type="objectList" id="kD^Mg1VU:]FwEN-O?o2V">
+                                  <field name="FIELDNAME">export_objet</field>
+                                </block>
+                              </value>
+                              <next>
+                                <block type="show" id="^y,~)m8Z33|-.c8lK-6`">
+                                  <value name="VALUE">
+                                    <block type="objectList" id="s~k4U{idLAv=vAzupk,~">
+                                      <field name="FIELDNAME">prompt_move_around</field>
+                                    </block>
+                                  </value>
+                                  <next>
+                                    <block type="arHitTest" id="*A6UNF9U`scP?:^hO8tZ">
+                                      <value name="SMOOTH">
+                                        <shadow type="math_number" id="jt}xyDW|DOJRW@nZSMXI">
+                                          <field name="NUM">0.7</field>
+                                        </shadow>
+                                      </value>
+                                      <statement name="DO_HIT">
+                                        <block type="controls_if" id="7wL9/WM2hwNq,$]lB,),">
+                                          <value name="IF0">
+                                            <block type="logic_compare" id="ZWZ$;m5!a74sS#a()JKG">
+                                              <field name="OP">EQ</field>
+                                              <value name="A">
+                                                <block type="variables_get" id="!/DOH0r!*dGXA$|N%^LE">
+                                                  <field name="VAR" id="F:BL-YRT8HB9}17}}AXE">mode</field>
+                                                </block>
+                                              </value>
+                                              <value name="B">
+                                                <block type="text" id="swg`nlrMWeeues=RlS0)">
+                                                  <field name="TEXT">indicator</field>
+                                                </block>
+                                              </value>
+                                            </block>
+                                          </value>
+                                          <statement name="DO0">
+                                            <block type="show" id="B]:H+iZFvSxmdmEJD+q]">
+                                              <value name="VALUE">
+                                                <block type="objectList" id="JfM!pd(nlh%U{hyO7T59">
+                                                  <field name="FIELDNAME">indicator_invis_plane</field>
+                                                </block>
+                                              </value>
+                                              <next>
+                                                <block type="setObjTransform" id="BxeQ@/hTzMQ^jC1p.=8`">
+                                                  <mutation xmlns="http://www.w3.org/1999/xhtml" usevectorslot="false" useworldspace="false"></mutation>
+                                                  <field name="MODE">position</field>
+                                                  <field name="OFFSET">FALSE</field>
+                                                  <value name="TARGETOBJ">
+                                                    <block type="objectList" id="r*o7Np8VEx`z-L47VN=S">
+                                                      <field name="FIELDNAME">indicator_invis_plane</field>
+                                                    </block>
+                                                  </value>
+                                                  <value name="X">
+                                                    <block type="arHitPoint" id="F@m0QBb*(E.Oh$57KR7G">
+                                                      <field name="COORD">x</field>
+                                                    </block>
+                                                  </value>
+                                                  <value name="Y">
+                                                    <block type="arHitPoint" id="M~iFx~h$D_kyA7_SnB@{">
+                                                      <field name="COORD">y</field>
+                                                    </block>
+                                                  </value>
+                                                  <value name="Z">
+                                                    <block type="arHitPoint" id="yN-lV~c!+]_zqUqto1:2">
+                                                      <field name="COORD">z</field>
+                                                    </block>
+                                                  </value>
+                                                </block>
+                                              </next>
+                                            </block>
+                                          </statement>
+                                          <next>
+                                            <block type="hide" id="xV{FpwJ:5Rg[sEn~1L9[">
+                                              <value name="VALUE">
+                                                <block type="objectList" id="-3}Jm%-c}Yo4XQ_ot1]P">
+                                                  <field name="FIELDNAME">prompt_move_around</field>
+                                                </block>
+                                              </value>
+                                            </block>
+                                          </next>
+                                        </block>
+                                      </statement>
+                                      <statement name="DO_MISS">
+                                        <block type="hide" id="_(:Q6)@$pP0qdSJCYkFz">
+                                          <value name="VALUE">
+                                            <block type="objectList" id="C7nX8+?eTZ*G9fE61R(5">
+                                              <field name="FIELDNAME">indicator_invis_plane</field>
+                                            </block>
+                                          </value>
+                                        </block>
+                                      </statement>
+                                      <next>
+                                        <block type="show" id="l5j5c4V7gW)ruZE9oI4[">
+                                          <value name="VALUE">
+                                            <shadow type="objectList" id="`}1:d3eK(WP6qc,1C!w]">
+                                              <field name="FIELDNAME">edit_button</field>
+                                            </shadow>
+                                          </value>
+                                          <next>
+                                            <block type="hide" id="Q[fEjQ(?xV(SjKn!AqVY">
+                                              <value name="VALUE">
+                                                <shadow type="objectList" id=":Cp*NJYIuQi]4:%n%=jm">
+                                                  <field name="FIELDNAME">&lt;none&gt;</field>
+                                                </shadow>
+                                                <block type="lists_create_with" id="Ot%+k/awDRF$hPDDSfoZ">
+                                                  <mutation items="3"></mutation>
+                                                  <value name="ADD0">
+                                                    <block type="objectList" id="ur;,[#o0ld**.EOMwtXt">
+                                                      <field name="FIELDNAME">drag_move</field>
+                                                    </block>
+                                                  </value>
+                                                  <value name="ADD1">
+                                                    <block type="objectList" id="+;.-]3PO(9EOu~*OE4ll">
+                                                      <field name="FIELDNAME">drag_rotate</field>
+                                                    </block>
+                                                  </value>
+                                                  <value name="ADD2">
+                                                    <block type="objectList" id="s-+G4*//CR6u{fkkntdI">
+                                                      <field name="FIELDNAME">ready_button</field>
+                                                    </block>
+                                                  </value>
+                                                </block>
+                                              </value>
+                                            </block>
+                                          </next>
+                                        </block>
+                                      </next>
+                                    </block>
+                                  </next>
+                                </block>
+                              </next>
+                            </block>
+                          </statement>
+                          <statement name="DO_EXIT">
+                            <block type="setScreenScale" id="wh67ZQzfSmE7xGVVFnfZ">
+                              <value name="FACTOR">
+                                <shadow type="math_number" id="s$:lY71);l43ZVd;:{!u">
+                                  <field name="NUM">1.5</field>
+                                </shadow>
+                              </value>
+                              <next>
+                                <block type="setObjTransform" id="]=J4r1v`|l#0E?r}cw1D">
+                                  <mutation xmlns="http://www.w3.org/1999/xhtml" usevectorslot="true" useworldspace="false"></mutation>
+                                  <field name="MODE">position</field>
+                                  <field name="OFFSET">FALSE</field>
+                                  <value name="TARGETOBJ">
+                                    <shadow type="objectList" id="!0*,bi%XAx;iU8+ziXFK">
+                                      <field name="FIELDNAME">&lt;none&gt;</field>
+                                    </shadow>
+                                    <block type="getActiveCamera" id="=@Kf$6)4zygglaNQ~gDy"></block>
+                                  </value>
+                                  <value name="USE_VECTOR">
+                                    <block type="variables_get" id="]bgqv|viG(2k/[~S9c5y">
+                                      <field name="VAR" id="U{-7r%UE6pN!eq)P;jWP">_cam_pos</field>
+                                    </block>
+                                  </value>
+                                  <next>
+                                    <block type="show" id="U(4,0?ZSi=WA6[HcoN`^">
+                                      <value name="VALUE">
+                                        <block type="objectList" id="4b`$-Ulzv=f~H`YrL+vV">
+                                          <field name="FIELDNAME">export_objet</field>
+                                        </block>
+                                      </value>
+                                      <next>
+                                        <block type="hide" id="80:rn|/rZG$oj5sInQ1E">
+                                          <value name="VALUE">
+                                            <shadow type="objectList" id="D46ZYF9mt^29wuo{H+@3">
+                                              <field name="FIELDNAME">&lt;none&gt;</field>
+                                            </shadow>
+                                            <block type="objectList" id="wGLGtFLzH/ymDC.]U`+g">
+                                              <field name="FIELDNAME">prompt_move_around</field>
+                                            </block>
+                                          </value>
+                                          <next>
+                                            <block type="setObjTransform" id="#b6y$I#+qZ4sj3Fe=(}F">
+                                              <mutation xmlns="http://www.w3.org/1999/xhtml" usevectorslot="true" useworldspace="false"></mutation>
+                                              <field name="MODE">position</field>
+                                              <field name="OFFSET">FALSE</field>
+                                              <value name="TARGETOBJ">
+                                                <block type="objectList" id="[MY+s9:uKnq7:XmdpvBn">
+                                                  <field name="FIELDNAME">export_objet</field>
+                                                </block>
+                                              </value>
+                                              <value name="USE_VECTOR">
+                                                <block type="createVector" id="_xZr/?#XI]:nMT~rJr8$">
+                                                  <value name="X">
+                                                    <shadow type="math_number" id="]]f.SRT3|bsmXXW*X=#+">
+                                                      <field name="NUM">0</field>
+                                                    </shadow>
+                                                  </value>
+                                                  <value name="Y">
+                                                    <shadow type="math_number" id="q(S+CJDyW?$-!:ZXok;T">
+                                                      <field name="NUM">0</field>
+                                                    </shadow>
+                                                  </value>
+                                                  <value name="Z">
+                                                    <shadow type="math_number" id="rujtXa(8=o;TRkb~oR5Z">
+                                                      <field name="NUM">0</field>
+                                                    </shadow>
+                                                  </value>
+                                                </block>
+                                              </value>
+                                              <next>
+                                                <block type="setObjDirection" id="pF!VgWw:pR8?C[m^e[|j">
+                                                  <mutation xmlns="http://www.w3.org/1999/xhtml" usevectorslot="true"></mutation>
+                                                  <field name="POINT">TRUE</field>
+                                                  <field name="LOCK_UP">TRUE</field>
+                                                  <comment pinned="false" h="32" w="128">Look at me!</comment>
+                                                  <value name="TARGETOBJ">
+                                                    <block type="objectList" id="Z5deHf/+z*zbFta#GDgI">
+                                                      <field name="FIELDNAME">export_objet</field>
+                                                    </block>
+                                                  </value>
+                                                  <value name="USE_VECTOR">
+                                                    <block type="getObjTransform" id="Okz2$NoVa2J,@U7s0Ole">
+                                                      <mutation xmlns="http://www.w3.org/1999/xhtml" useworldspace="false"></mutation>
+                                                      <field name="MODE">position</field>
+                                                      <field name="COORD">xyz</field>
+                                                      <value name="TARGETOBJ">
+                                                        <block type="objectList" id="j$mBp!Da[$g6yM;,;yv1">
+                                                          <field name="FIELDNAME">Camera</field>
+                                                        </block>
+                                                      </value>
+                                                    </block>
+                                                  </value>
+                                                  <next>
+                                                    <block type="hide" id="+5CXo~pZC:D[]WhUW4Tz">
+                                                      <value name="VALUE">
+                                                        <shadow type="objectList" id="*Z:YE5ZWs=vPy}fBJnMg">
+                                                          <field name="FIELDNAME">&lt;none&gt;</field>
+                                                        </shadow>
+                                                        <block type="lists_create_with" id="ta(=dCMd,)B6GHvhqSB.">
+                                                          <mutation items="4"></mutation>
+                                                          <value name="ADD0">
+                                                            <block type="objectList" id="#W75hfdn#e=ee!,xDDj=">
+                                                              <field name="FIELDNAME">edit_button</field>
+                                                            </block>
+                                                          </value>
+                                                          <value name="ADD1">
+                                                            <block type="objectList" id="l@xze*.}X]-U;)@xDk5V">
+                                                              <field name="FIELDNAME">ready_button</field>
+                                                            </block>
+                                                          </value>
+                                                          <value name="ADD2">
+                                                            <block type="objectList" id=";wV@WR#JK%t`!(vr9eP7">
+                                                              <field name="FIELDNAME">drag_move</field>
+                                                            </block>
+                                                          </value>
+                                                          <value name="ADD3">
+                                                            <block type="objectList" id="/x#L$Vzw(k`+ry(!~.rS">
+                                                              <field name="FIELDNAME">drag_rotate</field>
+                                                            </block>
+                                                          </value>
+                                                        </block>
+                                                      </value>
+                                                      <next>
+                                                        <block type="setObjTransform" id="F{gyE.`uaN0e6GBRi(10">
+                                                          <mutation xmlns="http://www.w3.org/1999/xhtml" usevectorslot="false" useworldspace="false"></mutation>
+                                                          <field name="MODE">scale</field>
+                                                          <field name="OFFSET">FALSE</field>
+                                                          <value name="TARGETOBJ">
+                                                            <shadow type="objectList" id="3I@,]Rfh_;!;UrV=w4yC">
+                                                              <field name="FIELDNAME">export_objet</field>
+                                                            </shadow>
+                                                          </value>
+                                                          <value name="X">
+                                                            <block type="math_number" id="?v|R;@}~m2y_-dX-#d#M">
+                                                              <field name="NUM">1</field>
+                                                            </block>
+                                                          </value>
+                                                          <value name="Y">
+                                                            <block type="math_number" id="XY7s:]v~Xf{7M=$s~h$Q">
+                                                              <field name="NUM">1</field>
+                                                            </block>
+                                                          </value>
+                                                          <value name="Z">
+                                                            <block type="math_number" id="nsW}DHtkmRjb9Va1$UWQ">
+                                                              <field name="NUM">1</field>
+                                                            </block>
+                                                          </value>
+                                                        </block>
+                                                      </next>
+                                                    </block>
+                                                  </next>
+                                                </block>
+                                              </next>
+                                            </block>
+                                          </next>
+                                        </block>
+                                      </next>
+                                    </block>
+                                  </next>
+                                </block>
+                              </next>
+                            </block>
+                          </statement>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </statement>
+            </block>
+          </statement>
+          <statement name="DO_USDZ">
+            <block type="eventHTMLElem" id=",2v7tH,#J{;;K!1n;swJ">
+              <field name="EVENT">click</field>
+              <field name="PARENT">TRUE</field>
+              <value name="ID">
+                <shadow type="text" id="{Zy|/bBIWcE/rGGVDRiU">
+                  <field name="TEXT">start_ar</field>
+                </shadow>
+              </value>
+              <statement name="DO">
+                <block type="AR-for-iOS/exportToUsdz" id="mnf,Z+?3c[xyf*A|h-hR">
+                  <mutation xmlns="http://www.w3.org/1999/xhtml" enabledoslot="false"></mutation>
+                  <value name="EXPORTER">
+                    <shadow type="exportToUSDZ" id="k0FngYl4~N1B,mmVbS*T">
+                      <value name="OBJ_NAME">
+                        <shadow type="objectList" id="J).@Z5X59y3Y0Vo7/af^">
+                          <field name="FIELDNAME">export_objet</field>
+                        </shadow>
+                      </value>
+                    </shadow>
+                  </value>
+                  <value name="OPTIONS">
+                    <shadow type="text" id="NkYf!vuDzjC%y00X+uju">
+                      <field name="TEXT">allowsContentScaling=0</field>
+                    </shadow>
+                  </value>
+                </block>
+              </statement>
+            </block>
+          </statement>
+        </block>
+      </statement>
+      <value name="IF1">
+        <block type="featureAvailable" id="/8-qyd8n}ND74@MyK5g$">
+          <field name="FEATURE">ANDROID</field>
+        </block>
+      </value>
+      <statement name="DO1">
+        <block type="eventHTMLElem" id="-=c~xfQ?mt(C_4#O~8`w">
+          <field name="EVENT">click</field>
+          <field name="PARENT">TRUE</field>
+          <value name="ID">
+            <shadow type="text" id="qolih6:F,,4,3k0M^$Mx">
+              <field name="TEXT">start_ar</field>
+            </shadow>
+          </value>
+          <statement name="DO">
+            <block type="execScript" id="2w/e-Fd0m4BV/lM|Wh%T">
+              <value name="TEXT">
+                <shadow type="textMultiline" id="?Ep)S!BPq).g5Vl}~b;=">
+                  <field name="HIGHLIGHT_MODE">javascript</field>
+                  <field name="TEXT" editor-height="16" editor-width="758.9131714675408">if (!window.ar_cyber_module) return;&amp;#10;&amp;#10;const url = window.ar_cyber_module.ARmodelURL_cyber;&amp;#10;if (!url) return;&amp;#10;&amp;#10;const btn = document.createElement("a");&amp;#10;btn.href =&amp;#10;  "intent://arvr.google.com/scene-viewer/1.0?file=" +&amp;#10;  url +&amp;#10;  "#Intent;scheme=https;package=com.google.android.googlequicksearchbox;action=android.intent.action.VIEW;S.browser_fallback_url=https://play.google.com/store/apps/details?id=com.google.ar.core;end;";&amp;#10;btn.innerText = "Enter AR";&amp;#10;btn.rel = "ar";&amp;#10;btn.target = "_blank";&amp;#10;&amp;#10;btn.click();&amp;#10;setTimeout(() =&gt; btn.remove(), 1500);</field>
+                </shadow>
+              </value>
+            </block>
+          </statement>
+          <next>
+            <block type="eventHTMLElem" id="9(OZvc|PdD+K0`}5K=w1">
+              <field name="EVENT">click</field>
+              <field name="PARENT">TRUE</field>
+              <value name="ID">
+                <shadow type="text" id="%4[y5u=n4wXad4=T5:l#">
+                  <field name="TEXT">confirm_ar</field>
+                </shadow>
+              </value>
+              <statement name="DO">
+                <block type="execScript" id="5y%%}`3`%5IK:ve[PkqR">
+                  <value name="TEXT">
+                    <shadow type="textMultiline" id=",FAOZ?BD%,dL4!8*U4B~">
+                      <field name="HIGHLIGHT_MODE">javascript</field>
+                      <field name="TEXT" editor-height="10" editor-width="750.7097009138365">if (!window.ar_cyber_module) return;&amp;#10;&amp;#10;window.ar_cyber_module.openAr({&amp;#10;    onUploaded: (url) =&gt; {&amp;#10;        const popup = window.ar_cyber_module.document_state.querySelector('.confirm_ar');&amp;#10;        if (popup) popup.style.display = 'flex';&amp;#10;    },&amp;#10;    get_glbBase64: () =&gt; PROC['get_glbBase64']&amp;#10;})</field>
+                    </shadow>
+                  </value>
+                </block>
+              </statement>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="iIO{pAA~IhTb2:*!lpDg" x="-1130" y="70">
+      <field name="EVENT">click</field>
+      <field name="PARENT">TRUE</field>
+      <value name="ID">
+        <shadow type="text" id="T$Alw/,w;ZEThck;z=17">
+          <field name="TEXT">socle-1</field>
+        </shadow>
+      </value>
+      <statement name="DO">
+        <block type="show" id="vNZ#?Xs6r~.R*``@1X]0">
+          <value name="VALUE">
+            <shadow type="objectList" id="(+e=ls}@3Y2`^RO,iL|f">
+              <field name="FIELDNAME">base_1</field>
+            </shadow>
+          </value>
+          <next>
+            <block type="hide" id="[!f/-?5mv,8ky$IRT~`2">
+              <value name="VALUE">
+                <shadow type="objectList" id="pQ_s6h{[#i`a[OG9W4%x">
+                  <field name="FIELDNAME">&lt;none&gt;</field>
+                </shadow>
+                <block type="lists_create_with" id="PserbZ$9+|Kd7Af#1yH{">
+                  <mutation items="3"></mutation>
+                  <value name="ADD0">
+                    <block type="objectList" id="D-mF!rQ7ckywNYR}}`J7">
+                      <field name="FIELDNAME">base_2</field>
+                    </block>
+                  </value>
+                  <value name="ADD1">
+                    <block type="objectList" id=";ot]{`b@o8:adR~m{!cS">
+                      <field name="FIELDNAME">base_3</field>
+                    </block>
+                  </value>
+                  <value name="ADD2">
+                    <block type="objectList" id="-t[x%xpu:I6$!e).3!$*">
+                      <field name="FIELDNAME">base_4</field>
+                    </block>
+                  </value>
+                </block>
+              </value>
+              <next>
+                <block type="procedures_callnoreturn" id="U^,T5(DxO5e3+h@`5:v#">
+                  <mutation name="set_state_changed"></mutation>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </statement>
+      <next>
+        <block type="eventHTMLElem" id="=D_n+1;OFwUsLN0Mwx=b">
+          <field name="EVENT">click</field>
+          <field name="PARENT">TRUE</field>
+          <value name="ID">
+            <shadow type="text" id="@M!*.Jie*yOCpeW[L!%q">
+              <field name="TEXT">socle-2</field>
+            </shadow>
+          </value>
+          <statement name="DO">
+            <block type="show" id="dL`a,9f~7r4RJC%$_le)">
+              <value name="VALUE">
+                <shadow type="objectList" id="7@q3b}/5^Hi:3W/%gmew">
+                  <field name="FIELDNAME">base_2</field>
+                </shadow>
+              </value>
+              <next>
+                <block type="hide" id="%|1K+gp3NjSoo/K,meoD">
+                  <value name="VALUE">
+                    <shadow type="objectList" id="pQ_s6h{[#i`a[OG9W4%x">
+                      <field name="FIELDNAME">&lt;none&gt;</field>
+                    </shadow>
+                    <block type="lists_create_with" id="s5}g6#wloNd(6[2gQPax">
+                      <mutation items="3"></mutation>
+                      <value name="ADD0">
+                        <block type="objectList" id="4[b-PYbo`]cIR~lhI?#h">
+                          <field name="FIELDNAME">base_1</field>
+                        </block>
+                      </value>
+                      <value name="ADD1">
+                        <block type="objectList" id="l9L%he6pU9!M{z8%Sk,N">
+                          <field name="FIELDNAME">base_3</field>
+                        </block>
+                      </value>
+                      <value name="ADD2">
+                        <block type="objectList" id="!/#*+!VTcLLsKe`_nx=W">
+                          <field name="FIELDNAME">base_4</field>
+                        </block>
+                      </value>
+                    </block>
+                  </value>
+                  <next>
+                    <block type="procedures_callnoreturn" id="e+)o/SOA[l`hvcmCZ(0O">
+                      <mutation name="set_state_changed"></mutation>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </statement>
+          <next>
+            <block type="eventHTMLElem" id="SK@by7d;TPUS4VJu`*S:">
+              <field name="EVENT">click</field>
+              <field name="PARENT">TRUE</field>
+              <value name="ID">
+                <shadow type="text" id="24Z?):n6mWb5iUk(c?u|">
+                  <field name="TEXT">socle-3</field>
+                </shadow>
+              </value>
+              <statement name="DO">
+                <block type="show" id="@EO~=%0l6[,6~Tz#KJ!Y">
+                  <value name="VALUE">
+                    <shadow type="objectList" id="GJVoqDD*^YK9)Je)TGX%">
+                      <field name="FIELDNAME">base_3</field>
+                    </shadow>
+                  </value>
+                  <next>
+                    <block type="hide" id="L:!T#3_`s8?)+W]e^=bd">
+                      <value name="VALUE">
+                        <shadow type="objectList" id="pQ_s6h{[#i`a[OG9W4%x">
+                          <field name="FIELDNAME">&lt;none&gt;</field>
+                        </shadow>
+                        <block type="lists_create_with" id="h[XC)2PS?3lw0gw,W.?j">
+                          <mutation items="3"></mutation>
+                          <value name="ADD0">
+                            <block type="objectList" id="Bw4mQCJb=*Dqr+nj):9D">
+                              <field name="FIELDNAME">base_1</field>
+                            </block>
+                          </value>
+                          <value name="ADD1">
+                            <block type="objectList" id="`;c,d;^B=J{f5Fw*T?~5">
+                              <field name="FIELDNAME">base_2</field>
+                            </block>
+                          </value>
+                          <value name="ADD2">
+                            <block type="objectList" id="*my7kb|zqJBz5)v}Y#+8">
+                              <field name="FIELDNAME">base_4</field>
+                            </block>
+                          </value>
+                        </block>
+                      </value>
+                      <next>
+                        <block type="procedures_callnoreturn" id="[Ej|uhS=$.p:h|eSN4{y">
+                          <mutation name="set_state_changed"></mutation>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </statement>
+              <next>
+                <block type="eventHTMLElem" id="MHw#LxqFbmiV!c@#[~}p">
+                  <field name="EVENT">click</field>
+                  <field name="PARENT">TRUE</field>
+                  <value name="ID">
+                    <shadow type="text" id="X$7:Z@}14Tgh`427X7Tt">
+                      <field name="TEXT">socle-4</field>
+                    </shadow>
+                  </value>
+                  <statement name="DO">
+                    <block type="show" id="DjdL9!!R=w2f.iMmz3~E">
+                      <value name="VALUE">
+                        <shadow type="objectList" id="dP/w?AVpoF%p{(tdQ?L%">
+                          <field name="FIELDNAME">base_4</field>
+                        </shadow>
+                      </value>
+                      <next>
+                        <block type="hide" id="Th(Fknq%dgsf:WO0FB6H">
+                          <value name="VALUE">
+                            <shadow type="objectList" id="pQ_s6h{[#i`a[OG9W4%x">
+                              <field name="FIELDNAME">&lt;none&gt;</field>
+                            </shadow>
+                            <block type="lists_create_with" id="Px/R^o8IN3f(WJCDvt-7">
+                              <mutation items="3"></mutation>
+                              <value name="ADD0">
+                                <block type="objectList" id="]?GEPkZ/R[`I)a63%Zh|">
+                                  <field name="FIELDNAME">base_1</field>
+                                </block>
+                              </value>
+                              <value name="ADD1">
+                                <block type="objectList" id="M*LpkzF6~_OefzWsK3yN">
+                                  <field name="FIELDNAME">base_2</field>
+                                </block>
+                              </value>
+                              <value name="ADD2">
+                                <block type="objectList" id=";O3+3$cq^xYFr84IaHH6">
+                                  <field name="FIELDNAME">base_3</field>
+                                </block>
+                              </value>
+                            </block>
+                          </value>
+                          <next>
+                            <block type="procedures_callnoreturn" id="=SzokxS-0_3~Y(k~Gs|T">
+                              <mutation name="set_state_changed"></mutation>
+                            </block>
+                          </next>
+                        </block>
+                      </next>
+                    </block>
+                  </statement>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </next>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="QUe*VT*j^4D[DHO2vWqH" disabled="true" x="970" y="50">
+      <field name="EVENT">click</field>
+      <field name="PARENT">TRUE</field>
+      <value name="ID">
+        <shadow type="text" id="k,uIvgaPq=z`1q!!s~El">
+          <field name="TEXT">socle_1</field>
+        </shadow>
+      </value>
+      <statement name="DO">
+        <block type="show" id="e7[20skQy@|WOLd;hXXc">
+          <value name="VALUE">
+            <shadow type="objectList" id="YH4,4(qR5YfJp8wWlXb4">
+              <field name="FIELDNAME">socle_1</field>
+            </shadow>
+          </value>
+          <next>
+            <block type="hide" id="$`YRRUxh!hsI0%#a~DCz">
+              <value name="VALUE">
+                <shadow type="objectList" id="pQ_s6h{[#i`a[OG9W4%x">
+                  <field name="FIELDNAME">&lt;none&gt;</field>
+                </shadow>
+                <block type="lists_create_with" id="F=o2tx6%p]z,+pJP0~D]">
+                  <mutation items="3"></mutation>
+                  <value name="ADD0">
+                    <block type="objectList" id="b9[!D2ivN[^@ry/1Pg@A">
+                      <field name="FIELDNAME">socle_2</field>
+                    </block>
+                  </value>
+                  <value name="ADD1">
+                    <block type="objectList" id="]w5df-Vuhnf,^rOfj`b3">
+                      <field name="FIELDNAME">socle_3</field>
+                    </block>
+                  </value>
+                  <value name="ADD2">
+                    <block type="objectList" id="b[JD[|pPm[5@XBa~^]97">
+                      <field name="FIELDNAME">socle_4</field>
+                    </block>
+                  </value>
+                </block>
+              </value>
+              <next>
+                <block type="procedures_callnoreturn" id="Yi=w#/phnj`11tv%fH.b">
+                  <mutation name="set_state_changed"></mutation>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </statement>
+      <next>
+        <block type="eventHTMLElem" id="]`D^y[T4eii|TP:,6{vb" disabled="true">
+          <field name="EVENT">click</field>
+          <field name="PARENT">TRUE</field>
+          <value name="ID">
+            <shadow type="text" id="MS0%bykW7:-T2*V19(Lq">
+              <field name="TEXT">socle_2</field>
+            </shadow>
+          </value>
+          <statement name="DO">
+            <block type="show" id="j@YLR;%@gq4$@h%dMK|w">
+              <value name="VALUE">
+                <shadow type="objectList" id="$qAp`mn$9dx.AH!~QRST">
+                  <field name="FIELDNAME">socle_2</field>
+                </shadow>
+              </value>
+              <next>
+                <block type="hide" id=":OCZIN3~_wJo1=Ftj.x/">
+                  <value name="VALUE">
+                    <shadow type="objectList" id="pQ_s6h{[#i`a[OG9W4%x">
+                      <field name="FIELDNAME">&lt;none&gt;</field>
+                    </shadow>
+                    <block type="lists_create_with" id="x7L=[_2-42}U:MwmFiLt">
+                      <mutation items="3"></mutation>
+                      <value name="ADD0">
+                        <block type="objectList" id=":[++ISSZIgL=px{6^c1O">
+                          <field name="FIELDNAME">socle_1</field>
+                        </block>
+                      </value>
+                      <value name="ADD1">
+                        <block type="objectList" id="a9.IV[v1(_*Lcipl_m3B">
+                          <field name="FIELDNAME">socle_3</field>
+                        </block>
+                      </value>
+                      <value name="ADD2">
+                        <block type="objectList" id="ce)TZYLXxB]4,nqjpB$.">
+                          <field name="FIELDNAME">socle_4</field>
+                        </block>
+                      </value>
+                    </block>
+                  </value>
+                  <next>
+                    <block type="procedures_callnoreturn" id="qTa3OW+AGFwRU4K*zlg)">
+                      <mutation name="set_state_changed"></mutation>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </statement>
+          <next>
+            <block type="eventHTMLElem" id="cT%2jp2{=yavc8%5a]WM" disabled="true">
+              <field name="EVENT">click</field>
+              <field name="PARENT">TRUE</field>
+              <value name="ID">
+                <shadow type="text" id="?Y0IUNh^B,84zVh4R_:T">
+                  <field name="TEXT">socle_3</field>
+                </shadow>
+              </value>
+              <statement name="DO">
+                <block type="show" id="aLm)RIDPKwiHzhv-^6oW">
+                  <value name="VALUE">
+                    <shadow type="objectList" id="L6%51X[^H/`RAv:Bz-kv">
+                      <field name="FIELDNAME">socle_3</field>
+                    </shadow>
+                  </value>
+                  <next>
+                    <block type="hide" id="%Qp5yLxvIt1F4c,F!P~c">
+                      <value name="VALUE">
+                        <shadow type="objectList" id="pQ_s6h{[#i`a[OG9W4%x">
+                          <field name="FIELDNAME">&lt;none&gt;</field>
+                        </shadow>
+                        <block type="lists_create_with" id=".v[}~vBZ{e_lx81S)v/`">
+                          <mutation items="3"></mutation>
+                          <value name="ADD0">
+                            <block type="objectList" id="@|Eb2|VSL~`kn[w;wQaZ">
+                              <field name="FIELDNAME">socle_2</field>
+                            </block>
+                          </value>
+                          <value name="ADD1">
+                            <block type="objectList" id="46:x8[h,jU)9?_yebsZ~">
+                              <field name="FIELDNAME">socle_1</field>
+                            </block>
+                          </value>
+                          <value name="ADD2">
+                            <block type="objectList" id="d%@T-z]~d%J:1dF*pJiE">
+                              <field name="FIELDNAME">socle_4</field>
+                            </block>
+                          </value>
+                        </block>
+                      </value>
+                      <next>
+                        <block type="procedures_callnoreturn" id="QhFFnU|+ou.[Y1P%*qz2">
+                          <mutation name="set_state_changed"></mutation>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </statement>
+              <next>
+                <block type="eventHTMLElem" id="EQ##n9NOObsFB5`sfZ(8" disabled="true">
+                  <field name="EVENT">click</field>
+                  <field name="PARENT">TRUE</field>
+                  <value name="ID">
+                    <shadow type="text" id="#+?mtJv*5aDx8tK.H6Z{">
+                      <field name="TEXT">socle_4</field>
+                    </shadow>
+                  </value>
+                  <statement name="DO">
+                    <block type="show" id="q=[$eunF!W60cuAc;)/7">
+                      <value name="VALUE">
+                        <shadow type="objectList" id="nbK)/P_1d,r2m1^!7yn~">
+                          <field name="FIELDNAME">socle_4</field>
+                        </shadow>
+                      </value>
+                      <next>
+                        <block type="hide" id="*kpO9FfdF4k^.C/Czl*t">
+                          <value name="VALUE">
+                            <shadow type="objectList" id="pQ_s6h{[#i`a[OG9W4%x">
+                              <field name="FIELDNAME">&lt;none&gt;</field>
+                            </shadow>
+                            <block type="lists_create_with" id="QhYtpgG~x!K32n}7eqI:">
+                              <mutation items="3"></mutation>
+                              <value name="ADD0">
+                                <block type="objectList" id="-h;x~vOKF{E4JG=[X2bu">
+                                  <field name="FIELDNAME">socle_1</field>
+                                </block>
+                              </value>
+                              <value name="ADD1">
+                                <block type="objectList" id="hW9e4(:=3]=BfM:r(v}`">
+                                  <field name="FIELDNAME">socle_2</field>
+                                </block>
+                              </value>
+                              <value name="ADD2">
+                                <block type="objectList" id=":HWWP};9hywO#y5.G}am">
+                                  <field name="FIELDNAME">socle_3</field>
+                                </block>
+                              </value>
+                            </block>
+                          </value>
+                          <next>
+                            <block type="procedures_callnoreturn" id="Tt;?M,:5hCj1qJ9t(MpE">
+                              <mutation name="set_state_changed"></mutation>
+                            </block>
+                          </next>
+                        </block>
+                      </next>
+                    </block>
+                  </statement>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </next>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="~Q|aPG,O:(,E.z.t?7Q^" disabled="true" x="1570" y="50">
+      <field name="EVENT">click</field>
+      <field name="PARENT">TRUE</field>
+      <value name="ID">
+        <shadow type="text" id=",DyN~8ajXJ:M.:.+;~`u">
+          <field name="TEXT">very_small</field>
+        </shadow>
+      </value>
+      <statement name="DO">
+        <block type="setObjTransform" id="|$5Bsq^A1Z$ZGCi`#6VR">
+          <mutation xmlns="http://www.w3.org/1999/xhtml" usevectorslot="false" useworldspace="false"></mutation>
+          <field name="MODE">scale</field>
+          <field name="OFFSET">FALSE</field>
+          <value name="TARGETOBJ">
+            <shadow type="objectList" id="~w,ndOa!{UOUrS#p3XU8">
+              <field name="FIELDNAME">&lt;none&gt;</field>
+            </shadow>
+            <block type="lists_create_with" id="K=t)%QlG2fV9VajAdIa$">
+              <mutation items="4"></mutation>
+              <value name="ADD0">
+                <block type="objectList" id="{q|d,ZSl;--LIW7^sk_5">
+                  <field name="FIELDNAME">forme_1</field>
+                </block>
+              </value>
+              <value name="ADD1">
+                <block type="objectList" id="HL^-*iN_EaZla0EX}9Xo">
+                  <field name="FIELDNAME">forme_2</field>
+                </block>
+              </value>
+              <value name="ADD2">
+                <block type="objectList" id="g@QDtn_`]l;P[lT1xSD:">
+                  <field name="FIELDNAME">forme_3</field>
+                </block>
+              </value>
+              <value name="ADD3">
+                <block type="objectList" id="D7JyuoQ}NtG8*C}{cT`F">
+                  <field name="FIELDNAME">forme_4</field>
+                </block>
+              </value>
+            </block>
+          </value>
+          <value name="X">
+            <block type="math_number" id="N@{2.oP-y25BO*^kR]0U">
+              <field name="NUM">1</field>
+            </block>
+          </value>
+          <value name="Y">
+            <block type="math_number" id="z5xk~mJzYAb)]#!,nAYw">
+              <field name="NUM">1</field>
+            </block>
+          </value>
+          <value name="Z">
+            <block type="math_number" id="^Q|qCqX]_kOeG-Q3v05~">
+              <field name="NUM">1</field>
+            </block>
+          </value>
+          <next>
+            <block type="zoomCameraToObject" id="eFskc,_~Jha,l|miP|L#">
+              <mutation xmlns="http://www.w3.org/1999/xhtml" whenfinishedslot="false"></mutation>
+              <value name="OBJECT">
+                <shadow type="objectList" id="}tm2,dwP:36bChPtv1?n">
+                  <field name="FIELDNAME">forme_1</field>
+                </shadow>
+              </value>
+              <value name="DURATION">
+                <shadow type="math_number" id="`BkcYKSt-%(Dqn$B8e2$">
+                  <field name="NUM">1</field>
+                </shadow>
+              </value>
+              <next>
+                <block type="zoomCameraToObject" id="aJ]=]XIQkywMs5FBavr7">
+                  <mutation xmlns="http://www.w3.org/1999/xhtml" whenfinishedslot="false"></mutation>
+                  <value name="OBJECT">
+                    <shadow type="objectList" id=")AW0iIp=uNszZI6#kIUf">
+                      <field name="FIELDNAME">forme_2</field>
+                    </shadow>
+                  </value>
+                  <value name="DURATION">
+                    <shadow type="math_number" id="fiNItN;XC_xtE/W8yqL!">
+                      <field name="NUM">1</field>
+                    </shadow>
+                  </value>
+                  <next>
+                    <block type="zoomCameraToObject" id="S=LsOLE}h)o7`}Wynqp8">
+                      <mutation xmlns="http://www.w3.org/1999/xhtml" whenfinishedslot="false"></mutation>
+                      <value name="OBJECT">
+                        <shadow type="objectList" id="#~sy1t:ewWMZl_4NO,1K">
+                          <field name="FIELDNAME">forme_3</field>
+                        </shadow>
+                      </value>
+                      <value name="DURATION">
+                        <shadow type="math_number" id="%|f;RgAz9PD(VpXTBe_3">
+                          <field name="NUM">1</field>
+                        </shadow>
+                      </value>
+                      <next>
+                        <block type="zoomCameraToObject" id="QoQys=0_,WU7]hpUM[k!">
+                          <mutation xmlns="http://www.w3.org/1999/xhtml" whenfinishedslot="false"></mutation>
+                          <value name="OBJECT">
+                            <shadow type="objectList" id="sN2@X59urDJ{)pMf}O?s">
+                              <field name="FIELDNAME">forme_4</field>
+                            </shadow>
+                          </value>
+                          <value name="DURATION">
+                            <shadow type="math_number" id="BKx,0}sc(E_3!eh@eh_n">
+                              <field name="NUM">1</field>
+                            </shadow>
+                          </value>
+                          <next>
+                            <block type="procedures_callnoreturn" id="PsZ5.U2X%EJ3R2:E}$[9">
+                              <mutation name="set_state_changed"></mutation>
+                            </block>
+                          </next>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </statement>
+      <next>
+        <block type="eventHTMLElem" id="VcMQc2DR[9}~=6m;N#{!" disabled="true">
+          <field name="EVENT">click</field>
+          <field name="PARENT">TRUE</field>
+          <value name="ID">
+            <shadow type="text" id=";8wDucL3|xO?y9:yyA=|">
+              <field name="TEXT">small</field>
+            </shadow>
+          </value>
+          <statement name="DO">
+            <block type="setObjTransform" id="-`8*2XSI0%Qc*#pGGOzH">
+              <mutation xmlns="http://www.w3.org/1999/xhtml" usevectorslot="false" useworldspace="false"></mutation>
+              <field name="MODE">scale</field>
+              <field name="OFFSET">FALSE</field>
+              <value name="TARGETOBJ">
+                <shadow type="objectList" id="~w,ndOa!{UOUrS#p3XU8">
+                  <field name="FIELDNAME">&lt;none&gt;</field>
+                </shadow>
+                <block type="lists_create_with" id="9N=EiH$RT0@Aw(0Hp#/i">
+                  <mutation items="4"></mutation>
+                  <value name="ADD0">
+                    <block type="objectList" id="c.;(No.$H?RDN^0#h7~%">
+                      <field name="FIELDNAME">forme_1</field>
+                    </block>
+                  </value>
+                  <value name="ADD1">
+                    <block type="objectList" id="!O^q0/!9n=:d,*JY0/()">
+                      <field name="FIELDNAME">forme_2</field>
+                    </block>
+                  </value>
+                  <value name="ADD2">
+                    <block type="objectList" id="R=qG$;%5,|v(}i^|]q!o">
+                      <field name="FIELDNAME">forme_3</field>
+                    </block>
+                  </value>
+                  <value name="ADD3">
+                    <block type="objectList" id="SEir(i15.0`kQ;a)887N">
+                      <field name="FIELDNAME">forme_4</field>
+                    </block>
+                  </value>
+                </block>
+              </value>
+              <value name="X">
+                <block type="math_number" id="6Q2k,=46DNe1:6f@]cN;">
+                  <field name="NUM">1.23</field>
+                </block>
+              </value>
+              <value name="Y">
+                <block type="math_number" id="OOmn_/eLB2ww3$O{n,sG">
+                  <field name="NUM">1.23</field>
+                </block>
+              </value>
+              <value name="Z">
+                <block type="math_number" id="!4-.jCjGB{jL0Z`%/u]k">
+                  <field name="NUM">1.23</field>
+                </block>
+              </value>
+              <next>
+                <block type="zoomCameraToObject" id="FUZ-thOqtBQQ2J6w{=2y">
+                  <mutation xmlns="http://www.w3.org/1999/xhtml" whenfinishedslot="false"></mutation>
+                  <value name="OBJECT">
+                    <shadow type="objectList" id="K[ZPXZf#@^Rp`vtbKZQg">
+                      <field name="FIELDNAME">forme_1</field>
+                    </shadow>
+                  </value>
+                  <value name="DURATION">
+                    <shadow type="math_number" id="[I,vbmgi;mPEx,4@?bQM">
+                      <field name="NUM">1</field>
+                    </shadow>
+                  </value>
+                  <next>
+                    <block type="zoomCameraToObject" id="OlIz`-|uY1tSFw6EQt}b">
+                      <mutation xmlns="http://www.w3.org/1999/xhtml" whenfinishedslot="false"></mutation>
+                      <value name="OBJECT">
+                        <shadow type="objectList" id=",+g@_4x8.e/oVP6lpY9X">
+                          <field name="FIELDNAME">forme_2</field>
+                        </shadow>
+                      </value>
+                      <value name="DURATION">
+                        <shadow type="math_number" id="YLMfX|i?O1J`tJmFlM|,">
+                          <field name="NUM">1</field>
+                        </shadow>
+                      </value>
+                      <next>
+                        <block type="zoomCameraToObject" id="Qf~rzzdyQ@]#H{#n@Drw">
+                          <mutation xmlns="http://www.w3.org/1999/xhtml" whenfinishedslot="false"></mutation>
+                          <value name="OBJECT">
+                            <shadow type="objectList" id="7J0#ZJY~dyQjBv^PxNha">
+                              <field name="FIELDNAME">forme_3</field>
+                            </shadow>
+                          </value>
+                          <value name="DURATION">
+                            <shadow type="math_number" id="%ru_Ov=,9J5/RFC:n0Rb">
+                              <field name="NUM">1</field>
+                            </shadow>
+                          </value>
+                          <next>
+                            <block type="zoomCameraToObject" id=")Czo_DCYV80v9=eh]~@i">
+                              <mutation xmlns="http://www.w3.org/1999/xhtml" whenfinishedslot="false"></mutation>
+                              <value name="OBJECT">
+                                <shadow type="objectList" id="[Fz)z2Ca9z9EauP4jmg;">
+                                  <field name="FIELDNAME">forme_4</field>
+                                </shadow>
+                              </value>
+                              <value name="DURATION">
+                                <shadow type="math_number" id=";jyxKBBCY8yFyvxl?gg7">
+                                  <field name="NUM">1</field>
+                                </shadow>
+                              </value>
+                              <next>
+                                <block type="procedures_callnoreturn" id="^f8,}[T-Y.dV8lB-^U:t">
+                                  <mutation name="set_state_changed"></mutation>
+                                </block>
+                              </next>
+                            </block>
+                          </next>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </statement>
+          <next>
+            <block type="eventHTMLElem" id="tLag@L,m;u,T^$;4{DK!" disabled="true">
+              <field name="EVENT">click</field>
+              <field name="PARENT">TRUE</field>
+              <value name="ID">
+                <shadow type="text" id="_a2)W,^)+?[mgRx;J*WO">
+                  <field name="TEXT">medium</field>
+                </shadow>
+              </value>
+              <statement name="DO">
+                <block type="setObjTransform" id="Y60cca?jn;).Lc{jKy:?">
+                  <mutation xmlns="http://www.w3.org/1999/xhtml" usevectorslot="false" useworldspace="false"></mutation>
+                  <field name="MODE">scale</field>
+                  <field name="OFFSET">FALSE</field>
+                  <value name="TARGETOBJ">
+                    <shadow type="objectList" id="~w,ndOa!{UOUrS#p3XU8">
+                      <field name="FIELDNAME">&lt;none&gt;</field>
+                    </shadow>
+                    <block type="lists_create_with" id="=2v}SSSlUeuCsdYnw8?k">
+                      <mutation items="4"></mutation>
+                      <value name="ADD0">
+                        <block type="objectList" id="g9%N!K8AIllJ598#JepU">
+                          <field name="FIELDNAME">forme_1</field>
+                        </block>
+                      </value>
+                      <value name="ADD1">
+                        <block type="objectList" id="fC^wnc7/h/vq#2dP#+X|">
+                          <field name="FIELDNAME">forme_2</field>
+                        </block>
+                      </value>
+                      <value name="ADD2">
+                        <block type="objectList" id="0-:x7]{J)l1RMli!W.qo">
+                          <field name="FIELDNAME">forme_3</field>
+                        </block>
+                      </value>
+                      <value name="ADD3">
+                        <block type="objectList" id="BI9eQ;Y+,]@Vy?DQHocO">
+                          <field name="FIELDNAME">forme_4</field>
+                        </block>
+                      </value>
+                    </block>
+                  </value>
+                  <value name="X">
+                    <block type="math_number" id="XnwTEP*A=;y3vMTOzr:@">
+                      <field name="NUM">1.54</field>
+                    </block>
+                  </value>
+                  <value name="Y">
+                    <block type="math_number" id="m/@Y{PoXUH6Sq1)o`$+Y">
+                      <field name="NUM">1.54</field>
+                    </block>
+                  </value>
+                  <value name="Z">
+                    <block type="math_number" id="2L~[rem;SVO_,tDPBX+g">
+                      <field name="NUM">1.54</field>
+                    </block>
+                  </value>
+                  <next>
+                    <block type="zoomCameraToObject" id="2kRPms%xAhw#bR@7AoRm">
+                      <mutation xmlns="http://www.w3.org/1999/xhtml" whenfinishedslot="false"></mutation>
+                      <value name="OBJECT">
+                        <shadow type="objectList" id="j$,tIiTlfzBVS;7tHG==">
+                          <field name="FIELDNAME">forme_1</field>
+                        </shadow>
+                      </value>
+                      <value name="DURATION">
+                        <shadow type="math_number" id="LDJG,CUJNCP1fyehA__H">
+                          <field name="NUM">1</field>
+                        </shadow>
+                      </value>
+                      <next>
+                        <block type="zoomCameraToObject" id="7bQ*~WlZ_3?GV1xtoU_q">
+                          <mutation xmlns="http://www.w3.org/1999/xhtml" whenfinishedslot="false"></mutation>
+                          <value name="OBJECT">
+                            <shadow type="objectList" id="4~haX!k,T5VSl?R]yCOV">
+                              <field name="FIELDNAME">forme_2</field>
+                            </shadow>
+                          </value>
+                          <value name="DURATION">
+                            <shadow type="math_number" id="4nN}6t}[JiARpvdkCPf/">
+                              <field name="NUM">1</field>
+                            </shadow>
+                          </value>
+                          <next>
+                            <block type="zoomCameraToObject" id="v_(p`U6i,.qNd#UYXrl[">
+                              <mutation xmlns="http://www.w3.org/1999/xhtml" whenfinishedslot="false"></mutation>
+                              <value name="OBJECT">
+                                <shadow type="objectList" id="!}wSEh?kzgLX]_u@21T2">
+                                  <field name="FIELDNAME">forme_3</field>
+                                </shadow>
+                              </value>
+                              <value name="DURATION">
+                                <shadow type="math_number" id="gX[-PEcqD*}T#xxe^RMD">
+                                  <field name="NUM">1</field>
+                                </shadow>
+                              </value>
+                              <next>
+                                <block type="zoomCameraToObject" id="XEqyMx{r.$Bk4]!g5N^-">
+                                  <mutation xmlns="http://www.w3.org/1999/xhtml" whenfinishedslot="false"></mutation>
+                                  <value name="OBJECT">
+                                    <shadow type="objectList" id="4f$8uMLlKwD#GK/y{w9j">
+                                      <field name="FIELDNAME">forme_4</field>
+                                    </shadow>
+                                  </value>
+                                  <value name="DURATION">
+                                    <shadow type="math_number" id="LU+7Skz[d$~+k3`^n4DW">
+                                      <field name="NUM">1</field>
+                                    </shadow>
+                                  </value>
+                                  <next>
+                                    <block type="procedures_callnoreturn" id="Wp_a}RTX]3npC_LA~ahb">
+                                      <mutation name="set_state_changed"></mutation>
+                                    </block>
+                                  </next>
+                                </block>
+                              </next>
+                            </block>
+                          </next>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </statement>
+              <next>
+                <block type="eventHTMLElem" id="1xsplg;#)-iQvZ(WE/s`" disabled="true">
+                  <field name="EVENT">click</field>
+                  <field name="PARENT">TRUE</field>
+                  <value name="ID">
+                    <shadow type="text" id="/0e2|tJQH`ppLH~Wf`OU">
+                      <field name="TEXT">large</field>
+                    </shadow>
+                  </value>
+                  <statement name="DO">
+                    <block type="setObjTransform" id="89%{Ov,_[WW6-l(xrSkv">
+                      <mutation xmlns="http://www.w3.org/1999/xhtml" usevectorslot="false" useworldspace="false"></mutation>
+                      <field name="MODE">scale</field>
+                      <field name="OFFSET">FALSE</field>
+                      <value name="TARGETOBJ">
+                        <shadow type="objectList" id="~w,ndOa!{UOUrS#p3XU8">
+                          <field name="FIELDNAME">&lt;none&gt;</field>
+                        </shadow>
+                        <block type="lists_create_with" id="bPTwI8hP;+$OA?+XB*Qw">
+                          <mutation items="4"></mutation>
+                          <value name="ADD0">
+                            <block type="objectList" id="6m5:#)m1W9A:k9]][Iwb">
+                              <field name="FIELDNAME">forme_1</field>
+                            </block>
+                          </value>
+                          <value name="ADD1">
+                            <block type="objectList" id="kM(iJJdGE6eh)(Bxym$Z">
+                              <field name="FIELDNAME">forme_2</field>
+                            </block>
+                          </value>
+                          <value name="ADD2">
+                            <block type="objectList" id="VC4X?@;9._$o!LWdm3dP">
+                              <field name="FIELDNAME">forme_3</field>
+                            </block>
+                          </value>
+                          <value name="ADD3">
+                            <block type="objectList" id="T4KHy8*O`p*Q1|/)29~5">
+                              <field name="FIELDNAME">forme_4</field>
+                            </block>
+                          </value>
+                        </block>
+                      </value>
+                      <value name="X">
+                        <block type="math_number" id="QFs4p..fzoixG%20`g0o">
+                          <field name="NUM">1.88</field>
+                        </block>
+                      </value>
+                      <value name="Y">
+                        <block type="math_number" id="c9[4D!QsH?/I@fsbI@${">
+                          <field name="NUM">1.88</field>
+                        </block>
+                      </value>
+                      <value name="Z">
+                        <block type="math_number" id="95RSFoR?AE_Im`)XNPjt">
+                          <field name="NUM">1.88</field>
+                        </block>
+                      </value>
+                      <next>
+                        <block type="zoomCameraToObject" id="F=E6OvgfzDpR~:jS`,4;">
+                          <mutation xmlns="http://www.w3.org/1999/xhtml" whenfinishedslot="false"></mutation>
+                          <value name="OBJECT">
+                            <shadow type="objectList" id="CwV:1-!mBBE_uZ9,ksI)">
+                              <field name="FIELDNAME">forme_1</field>
+                            </shadow>
+                          </value>
+                          <value name="DURATION">
+                            <shadow type="math_number" id="@DV2}bwjU3j:vrQW}7,R">
+                              <field name="NUM">1</field>
+                            </shadow>
+                          </value>
+                          <next>
+                            <block type="zoomCameraToObject" id="Ct(e~zb#[nPyH2ZcbiUM">
+                              <mutation xmlns="http://www.w3.org/1999/xhtml" whenfinishedslot="false"></mutation>
+                              <value name="OBJECT">
+                                <shadow type="objectList" id="=uy-TN}GAtTcV6*aFwnk">
+                                  <field name="FIELDNAME">forme_2</field>
+                                </shadow>
+                              </value>
+                              <value name="DURATION">
+                                <shadow type="math_number" id="FF^f.e^yjB7Z;MyU.7Jv">
+                                  <field name="NUM">1</field>
+                                </shadow>
+                              </value>
+                              <next>
+                                <block type="zoomCameraToObject" id="1dL10xd3ZWwf#8W5c(F+">
+                                  <mutation xmlns="http://www.w3.org/1999/xhtml" whenfinishedslot="false"></mutation>
+                                  <value name="OBJECT">
+                                    <shadow type="objectList" id="]~+01PjTMQSvmKnmjTE/">
+                                      <field name="FIELDNAME">forme_3</field>
+                                    </shadow>
+                                  </value>
+                                  <value name="DURATION">
+                                    <shadow type="math_number" id="K:RM`#|Fa4T$!J4=1FRQ">
+                                      <field name="NUM">1</field>
+                                    </shadow>
+                                  </value>
+                                  <next>
+                                    <block type="zoomCameraToObject" id="$m#dj;=hS9!3$$#yL0k^">
+                                      <mutation xmlns="http://www.w3.org/1999/xhtml" whenfinishedslot="false"></mutation>
+                                      <value name="OBJECT">
+                                        <shadow type="objectList" id="Q_[{P.$}E`MU8,PAb=}a">
+                                          <field name="FIELDNAME">forme_4</field>
+                                        </shadow>
+                                      </value>
+                                      <value name="DURATION">
+                                        <shadow type="math_number" id="$qPW1Jh.UG!^Aa=v(6/{">
+                                          <field name="NUM">1</field>
+                                        </shadow>
+                                      </value>
+                                      <next>
+                                        <block type="procedures_callnoreturn" id="w8X{NBQRHZo))hTtv1|R">
+                                          <mutation name="set_state_changed"></mutation>
+                                        </block>
+                                      </next>
+                                    </block>
+                                  </next>
+                                </block>
+                              </next>
+                            </block>
+                          </next>
+                        </block>
+                      </next>
+                    </block>
+                  </statement>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </next>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="execScript" id="c{o!R-gerw=V)CS5s3KO" disabled="true" x="3850" y="970">
+      <value name="TEXT">
+        <shadow type="textMultiline" id="M-503`]7!,,rAE{0*-Pf">
+          <field name="HIGHLIGHT_MODE">javascript</field>
+          <field name="TEXT" editor-height="15" editor-width="520">document.body.insertAdjacentHTML(&amp;#10;  'beforeend',&amp;#10;  `&lt;model-viewer id="modelViewer" loading="eager" alt="test" src="${VARS["gltf"]}" ar ar-modes="scene-viewer webxr quick-look"&gt;&lt;/model-viewer&gt;`&amp;#10;);&amp;#10;&amp;#10;const modelViewer = document.getElementById('modelViewer');&amp;#10;&amp;#10;modelViewer.addEventListener("load", () =&gt; {&amp;#10;    const interval = setInterval(() =&gt; {&amp;#10;        if (modelViewer.modelIsVisible === true) {&amp;#10;            clearInterval(interval);&amp;#10;            modelViewer.activateAR();&amp;#10;        }&amp;#10;    }, 100)&amp;#10;});</field>
+        </shadow>
+      </value>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="whenClicked" id="EtPF(B4U~|cEtf1`,u7g" inline="false" x="-1090" y="1530">
+      <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false" enableifmissed="false"></mutation>
+      <field name="X_RAY">FALSE</field>
+      <field name="DOUBLE_CLICK">FALSE</field>
+      <field name="LEFT_BUTTON">TRUE</field>
+      <field name="MIDDLE_BUTTON">TRUE</field>
+      <field name="RIGHT_BUTTON">TRUE</field>
+      <value name="VALUE">
+        <shadow type="objectList" id="GRz18zvjF`tN%xpn*_n7">
+          <field name="FIELDNAME">&lt;none&gt;</field>
+        </shadow>
+        <block type="lists_create_with" id="f^V+p{-dP8$b13K8mhbr">
+          <mutation items="4"></mutation>
+          <value name="ADD0">
+            <block type="objectList" id="V0+})im_.Z1]pO[(nb(C">
+              <field name="FIELDNAME">taille_1</field>
+            </block>
+          </value>
+          <value name="ADD1">
+            <block type="objectList" id="7r8Z@bA-#xM95xKmZg7K">
+              <field name="FIELDNAME">taille_2</field>
+            </block>
+          </value>
+          <value name="ADD2">
+            <block type="objectList" id="sQr{LkmY=k}%X;|]hS)j">
+              <field name="FIELDNAME">taille_3</field>
+            </block>
+          </value>
+          <value name="ADD3">
+            <block type="objectList" id="xg^B;u!^[w5k6?=mn=F!">
+              <field name="FIELDNAME">taille_3</field>
+            </block>
+          </value>
+        </block>
+      </value>
+      <statement name="DO">
+        <block type="openFile" id="z8;coaa*^(scQDQr*b#C">
+          <statement name="DO">
+            <block type="procedures_callnoreturn" id="VlrxwTu)/!PP{1.xITFF">
+              <mutation name="process_opened_file"></mutation>
+            </block>
+          </statement>
+          <next>
+            <block type="procedures_callnoreturn" id="qwHp*2/@2a2FE(UpQUaB">
+              <mutation name="set_state_changed"></mutation>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defnoreturn" id="RLNCop+|(PysYoQ:]NAb" x="-510" y="1530">
+      <field name="NAME">process_opened_file</field>
+      <comment pinned="false" h="80" w="160">Describe this function...</comment>
+      <statement name="STACK">
+        <block type="replaceTexture" id="4HAWKPTp?285{EC%y1os">
+          <mutation xmlns="http://www.w3.org/1999/xhtml" enabledoslot="false" flextexinput="false"></mutation>
+          <field name="OLD_TEX_NAME">import_image.jpg</field>
+          <value name="MATERIAL">
+            <shadow type="materialList" id="(N]!dxAet1WW*$j:-TEt">
+              <field name="FIELDNAME">replace_img_texture</field>
+            </shadow>
+          </value>
+          <value name="NEW_TEX_URL">
+            <shadow type="text" id="3A,:sb(6^Qf]z-!nw|-*">
+              <field name="TEXT">newTexture.png</field>
+            </shadow>
+            <block type="openedFile" id="6#+D{LiXJm;rGGAZgJ.[">
+              <field name="WHAT">DATA</field>
+            </block>
+          </value>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defreturn" id="zO6OM{*lS`:1X-=gw2J:" x="3570" y="1490">
+      <field name="NAME">get_glbBase64</field>
+      <comment pinned="false" h="80" w="160">Describe this function...</comment>
+      <value name="RETURN">
+        <block type="exportToGLTF" id="ey:-}5H^rtU!H5.e}BgG">
+          <field name="ONLY_VISIBLE">TRUE</field>
+          <field name="EXPORT_ANIMS">FALSE</field>
+          <field name="BINARY">FALSE</field>
+          <value name="OBJ_NAME">
+            <shadow type="objectList" id="~3rm57f};-a]RNrer=IQ">
+              <field name="FIELDNAME">export_objet</field>
+            </shadow>
+          </value>
+        </block>
+      </value>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defnoreturn" id="iWnTA:NhP!hyTPi$*Chx" x="3590" y="1630">
+      <field name="NAME">set_state_changed</field>
+      <comment pinned="false" h="80" w="160">Describe this function...</comment>
+      <statement name="STACK">
+        <block type="execScript" id="~JuITD1T4Uih`2E+ClX9">
+          <value name="TEXT">
+            <shadow type="textMultiline" id="Z/d_d^PBdPxvlTd/QA:h">
+              <field name="HIGHLIGHT_MODE">javascript</field>
+              <field name="TEXT" editor-height="3" editor-width="520">if (!window.ar_cyber_module) return&amp;#10;&amp;#10;window.ar_cyber_module.set_isChanged(true)</field>
+            </shadow>
+          </value>
+        </block>
+      </statement>
+    </block>
+  </tab>
+  <editorsettings viewport-x="1392.7926513671873" viewport-y="37" viewport-w="486.204" viewport-h="458.495" viewport-hidden="true" toolbox-library-mode="false" toolbox-minimized-mode="false"></editorsettings>
+</xml>
